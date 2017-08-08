@@ -5,7 +5,21 @@
 #ifndef PROCESSPOOL_H
 #define PROCESSPOOL_H
 
-#include "common.h"
+#include <sys/types.h>
+#include <sys/socket.h>
+#include <sys/epoll.h>
+#include <sys/wait.h>
+#include <sys/stat.h>
+#include <netinet/in.h>
+#include <arpa/inet.h>
+#include <assert.h>
+#include <stdio.h>
+#include <unistd.h>
+#include <errno.h>
+#include <string.h>
+#include <fcntl.h>
+#include <stdlib.h>
+#include <signal.h>
 
 class process
 {
